@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import "./CinemaSelectionPage.css";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
-import Movie from '../../components/MovieList/Movie';
 import Navbar from '../../components/Navbar';
 
 const CinemaSelectionPage = () => {
