@@ -1,0 +1,116 @@
+.header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #0A1E5E;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header.hidden {
+    transform: translateY(-100%);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: auto;
+    width: 100%;
+}
+
+.navlink {
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.navlink:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.join-btn {
+    padding: 8px 25px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(0.25turn, #ff4a56, #3f4ffb);
+    transition: box-shadow .3s;
+}
+
+.user-icon {
+    color: whitesmoke;
+}
+
+.join-btn:hover {
+    text-decoration: none;
+    color: whitesmoke;
+    box-shadow: 0 5px 10px rgb(40, 57, 183);
+}
+
+.join-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+    box-shadow: none;
+}
+
+.join-btn {
+    position: relative;
+}
+
+.account-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0 5px;
+}
+
+@media only screen and (max-width: 575.5px) {
+
+    .hero-logo {
+        height: 38px;
+        width: 78px;
+        object-fit: cover;
+        object-position: right;
+    }
+
+    .nav-links {
+        margin-top: 3px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .join-btn {
+        padding: 6px 14px;
+    }
+
+    .join-btn span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+
+    .navbar-toggler {
+        padding: 3px 6px !important;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .admin-option {
+        min-width: fit-content;
+    }
+}

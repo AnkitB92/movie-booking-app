@@ -1,0 +1,73 @@
+.home-bg {
+  background-size: cover;
+  background-position: top 60px center;
+  background-repeat: no-repeat;
+  background-image: url('../../images/banner02.jpg');
+  background-attachment: fixed;
+  transition: all 0.3s;
+}
+
+.home {
+  height: 70vh;
+  max-height: 500px;
+  text-align: center;
+  align-content: center;
+  color: white;
+  transition: all 0.3s;
+}
+
+.home h1 {
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+.home p {
+  font-size: 2.5vw;
+}
+
+.movie-filter-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  top: -60px;
+  transition: all 0.3s;
+}
+
+.movie-list-section {
+  top: -40px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .home {
+    height: 60vh;
+  }
+
+  .home h1 {
+    font-size: 5vw;
+  }
+
+  .home p {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+
+  .home-bg,
+  .home {
+    display: none;
+  }
+
+  .movie-filter-section {
+    top: 80px;
+  }
+
+  .movie-list-section {
+    top: 100px;
+  }
+
+}
