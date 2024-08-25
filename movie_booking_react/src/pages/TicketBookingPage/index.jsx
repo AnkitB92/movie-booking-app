@@ -212,8 +212,8 @@ const TicketBookingPage = () => {
           <div className="seat-number">
             <span>Number of Seats:</span>
             <select id="numSeats" value={numSeats} onChange={handleNumSeatsChange}>
-              {[1, 2, 3, 4, 5].map((num) => (
-                <option className='text-center' key={num} value={num}>
+              {Array.from({ length: 10 }, (_, i) => i + 1).map((num) => (
+                <option className="text-center" key={num} value={num}>
                   {num}
                 </option>
               ))}
