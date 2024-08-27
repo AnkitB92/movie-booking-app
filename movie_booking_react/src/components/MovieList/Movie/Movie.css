@@ -103,6 +103,7 @@
 @media only screen and (max-width: 620px) {
   .loading-api {
     top: 0;
+    left: 44%;
   }
 }
 
